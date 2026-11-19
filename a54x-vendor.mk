@@ -46,11 +46,19 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a54x/proprietary/vendor/etc/init/android.hardware.security.keymint-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.samsung.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/camera.unihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camera.unihal.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/epic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/epic.rc \
+    vendor/samsung/a54x/proprietary/vendor/etc/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/init.fingerprint.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fingerprint.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/init.sensorhub.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sensorhub.rc \
+    vendor/samsung/a54x/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc \
+    vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
+    vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung.rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rild.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung_slsi.hardware.epic@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung_slsi.hardware.epic@1.0-service.rc \
+    vendor/samsung/a54x/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
+    vendor/samsung/a54x/proprietary/vendor/etc/plmn_delta_attaio.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_attaio.bin \
+    vendor/samsung/a54x/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
+    vendor/samsung/a54x/proprietary/vendor/etc/plmn_se13_prebuilt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13_prebuilt.bin \
     vendor/samsung/a54x/proprietary/vendor/etc/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
     vendor/samsung/a54x/proprietary/vendor/etc/sound_trigger_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_info.xml \
     vendor/samsung/a54x/proprietary/vendor/firmware/APBargeIn_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBargeIn_AUDIO_SLSI.bin \
@@ -297,6 +305,8 @@ PRODUCT_PACKAGES += \
     libExynosHWCService \
     libIRTA \
     libSamsungPostProcessConvertor \
+    libVendorSemDataProps \
+    libVendorSemTelephonyProps \
     lib_SamsungRec_07010 \
     lib_SoundAlive_3DPosition_ver202 \
     lib_SoundAlive_AlbumArt_ver105 \
@@ -315,6 +325,7 @@ PRODUCT_PACKAGES += \
     libdualcam_refocus_video \
     libegis_fp_normal_sensor_test \
     libeis_core \
+    libengmode_client \
     libenn_common_utils \
     libenn_cpu_operators \
     libenn_engine_lib \
@@ -327,6 +338,7 @@ PRODUCT_PACKAGES += \
     libepic_helper \
     libepicoperator \
     libexynosscaler \
+    libfloatingfeature \
     libformatConverter.unifunc \
     libgf_in_system_lib \
     libgiantmscl \
@@ -342,11 +354,13 @@ PRODUCT_PACKAGES += \
     libprofileparamstorage \
     libqfp_sensortest \
     librecordalive \
+    libril_sem \
     libsamsungcamerahal \
     libsamsungcamerahalutils \
     libsamsungcamerahwl_impl \
     libscaler_hw.unifunc \
     libscaler_sw.unifunc \
+    libsec-ril-impl \
     libsec2lsi_conversion \
     libsec_semHalTlc \
     libsec_semRil \
@@ -354,6 +368,8 @@ PRODUCT_PACKAGES += \
     libsecaudioinfo \
     libsecaudiolevel \
     libsecnativefeature \
+    libsecril-client \
+    libsemnativecarrierfeature \
     libsemseg \
     libsensorlistener \
     libsfp_sensor \
@@ -368,6 +384,7 @@ PRODUCT_PACKAGES += \
     libuniapi \
     libuniplugin \
     libuuid_vendor \
+    libvkmanager_vendor \
     libvpl \
     libwvaidl \
     sensors.grip \
@@ -389,6 +406,12 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.camera.device-V1-ndk \
     vendor.samsung.hardware.camera.provider-V1-ndk \
     vendor.samsung.hardware.keymint-V2-ndk \
+    vendor.samsung.hardware.radio-V1-ndk \
+    vendor.samsung.hardware.radio.bridge-V1-ndk \
+    vendor.samsung.hardware.radio.channel-V1-ndk \
+    vendor.samsung.hardware.radio.data-V1-ndk \
+    vendor.samsung.hardware.radio.messaging-V1-ndk \
+    vendor.samsung.hardware.radio.sim-V1-ndk \
     vendor.samsung.hardware.thermal@1.0 \
     vendor.samsung.libcolor.custom \
     vendor.samsung_slsi.hardware.epic@1.0 \
@@ -397,9 +420,13 @@ PRODUCT_PACKAGES += \
     com.android.hotwordenrollment.common.util \
     manifest_android.hardware.drm-service.widevine.xml \
     vendor.samsung.hardware.camera.provider-service.xml \
+    vendor.samsung.hardware.radio.exclude.slsi.xml \
+    vendor.samsung.hardware.radio_manifest_2_34.xml \
+    vendor.samsung.hardware.sehradio_manifest_2_34.xml \
     epic \
     android.hardware.drm-service.widevine \
     android.hardware.security.keymint-service.samsung \
+    rild \
     vendor.samsung.hardware.camera.provider-service_64 \
     vendor.samsung_slsi.hardware.epic@1.0-service \
     tzdaemon \
