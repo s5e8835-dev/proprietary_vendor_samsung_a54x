@@ -12,6 +12,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a54x/proprietary/product/etc/sysconfig/sysconfig_gemini.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/sysconfig_gemini.xml \
     vendor/samsung/a54x/proprietary/recovery/root/vendor/firmware/s3907_a54x.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/s3907_a54x.bin \
     vendor/samsung/a54x/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/SM-A546B/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/SM-A546B/floating_feature.xml \
     vendor/samsung/a54x/proprietary/vendor/etc/SM-A546E/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/SM-A546E/floating_feature.xml \
     vendor/samsung/a54x/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
     vendor/samsung/a54x/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
