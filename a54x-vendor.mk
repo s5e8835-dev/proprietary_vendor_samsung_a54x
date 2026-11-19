@@ -11,6 +11,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a54x/proprietary/product/etc/sysconfig/sysconfig_contextual_search.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/sysconfig_contextual_search.xml \
     vendor/samsung/a54x/proprietary/product/etc/sysconfig/sysconfig_gemini.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/sysconfig_gemini.xml \
     vendor/samsung/a54x/proprietary/recovery/root/vendor/firmware/s3907_a54x.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/s3907_a54x.bin \
+    vendor/samsung/a54x/proprietary/system/etc/nfc_key:$(TARGET_COPY_OUT_SYSTEM)/etc/nfc_key \
     vendor/samsung/a54x/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/samsung/a54x/proprietary/vendor/etc/SM-A546B/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/SM-A546B/floating_feature.xml \
     vendor/samsung/a54x/proprietary/vendor/etc/SM-A546E/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/SM-A546E/floating_feature.xml \
@@ -55,14 +56,19 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a54x/proprietary/vendor/etc/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/init.fingerprint.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fingerprint.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/init.gps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps.rc \
+    vendor/samsung/a54x/proprietary/vendor/etc/init/init.nfc.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nfc.samsung.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/init.sensorhub.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sensorhub.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
+    vendor/samsung/a54x/proprietary/vendor/etc/init/nxp.android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nxp.android.hardware.nfc@1.2-service.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss-service.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung.rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rild.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung_slsi.hardware.epic@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung_slsi.hardware.epic@1.0-service.rc \
+    vendor/samsung/a54x/proprietary/vendor/etc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
+    vendor/samsung/a54x/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
+    vendor/samsung/a54x/proprietary/vendor/etc/nfc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp_RF.conf \
     vendor/samsung/a54x/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
     vendor/samsung/a54x/proprietary/vendor/etc/plmn_delta_attaio.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_attaio.bin \
     vendor/samsung/a54x/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
@@ -303,6 +309,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libGLES_mali \
+    ese_spi_nxp \
     gnss_aidl_lib \
     camera.s5e8835 \
     camera.unihal.default \
@@ -397,6 +404,7 @@ PRODUCT_PACKAGES += \
     libvpl \
     libwrappergps \
     libwvaidl \
+    nfc_nci_nxpsn \
     sensors.grip \
     sensors.inputvirtual \
     sensors.sensorhub \
@@ -417,6 +425,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.camera.provider-V1-ndk \
     vendor.samsung.hardware.gnss-V3-ndk \
     vendor.samsung.hardware.keymint-V2-ndk \
+    vendor.samsung.hardware.nfc@2.0 \
     vendor.samsung.hardware.radio-V1-ndk \
     vendor.samsung.hardware.radio.bridge-V1-ndk \
     vendor.samsung.hardware.radio.channel-V1-ndk \
@@ -430,6 +439,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleEx4CORTEXM4 \
     com.android.hotwordenrollment.common.util \
     manifest_android.hardware.drm-service.widevine.xml \
+    nxp.android.hardware.nfc@1.2-service.xml \
     vendor.samsung.hardware.camera.provider-service.xml \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
     vendor.samsung.hardware.radio_manifest_2_34.xml \
@@ -440,6 +450,7 @@ PRODUCT_PACKAGES += \
     gps \
     gpsd \
     macloader \
+    nxp.android.hardware.nfc@1.2-service \
     rild \
     vendor.samsung.hardware.camera.provider-service_64 \
     vendor.samsung.hardware.gnss-service \
