@@ -16,6 +16,30 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a54x/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
     vendor/samsung/a54x/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/samsung/a54x/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/DQE_coef_data.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/DQE_coef_data.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/calib_data_atc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_atc.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/calib_data_atc_s6e3fc5_a35x.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_atc_s6e3fc5_a35x.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/calib_data_bypass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_bypass.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/calib_data_colormode0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_colormode0.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/calib_data_colormode0_s6e3fc5_a54x.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_colormode0_s6e3fc5_a54x.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/calib_data_colortemp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_colortemp.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/calib_data_eyetemp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_eyetemp.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/calib_data_rgbgain.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_rgbgain.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/calib_data_skincolor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_skincolor.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/calib_data_whitepoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_whitepoint.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/hdr10Info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/hdr10Info.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/hdr10Lut_Default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/hdr10Lut_Default.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/hdr10Lut_Inner_SRGB.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/hdr10Lut_Inner_SRGB.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/hdr10pInfo.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/hdr10pInfo.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/hdr10pLut_Default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/hdr10pLut_Default.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/hdr10pLut_Inner_SRGB.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/hdr10pLut_Inner_SRGB.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/hdrHwDPU.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/hdrHwDPU.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/hdrModuleSpecifiers.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/hdrModuleSpecifiers.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/hdrTuneLut.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/hdrTuneLut.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/hlgInfo.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/hlgInfo.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/hlgLut_Default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/hlgLut_Default.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/hlgLut_Inner_SRGB.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/hlgLut_Inner_SRGB.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dqe/wcgLut.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/wcgLut.xml \
     vendor/samsung/a54x/proprietary/vendor/etc/init/android.hardware.security.keymint-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.samsung.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
@@ -23,6 +47,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a54x/proprietary/vendor/firmware/APBargeIn_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBargeIn_AUDIO_SLSI.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/APDV_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APDV_AUDIO_SLSI.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/AP_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/AP_AUDIO_SLSI.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/OD_V2.4.3_05_11_QVGA_QUARTZ_ENN_RGB1P.nnc:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.4.3_05_11_QVGA_QUARTZ_ENN_RGB1P.nnc \
+    vendor/samsung/a54x/proprietary/vendor/firmware/OD_V2.5.2_05_11_VGA_QUARTZ_ENN_RGB1P.nnc:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.5.2_05_11_VGA_QUARTZ_ENN_RGB1P.nnc \
     vendor/samsung/a54x/proprietary/vendor/firmware/SM-A546B/AIE.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-A546B/AIE.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/SM-A546B/calliope_sram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-A546B/calliope_sram.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/SM-A546B/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-A546B/mfc_fw.bin \
@@ -151,8 +177,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a54x/proprietary/vendor_ramdisk/vendor/firmware/s3907_a54x.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/s3907_a54x.bin
 
 PRODUCT_PACKAGES += \
+    libGLES_mali \
     gatekeeper.s5e8835 \
     sound_trigger.primary.s5e8835 \
+    vulkan.mali \
+    libExynosHWCService \
     libSamsungPostProcessConvertor \
     lib_SamsungRec_07010 \
     lib_SoundAlive_3DPosition_ver202 \
@@ -166,6 +195,9 @@ PRODUCT_PACKAGES += \
     libaudioparamupdate \
     libaudioroute_samsung \
     libdatamod \
+    libdisplaycolor_default \
+    libhdr10p_meta_plugin_default \
+    libhdr_plugin \
     liblastaboxmsg \
     libprofileparamstorage \
     librecordalive \
@@ -188,9 +220,15 @@ PRODUCT_PACKAGES += \
     libswdap \
     libswspatializer \
     vendor.samsung.hardware.keymint-V2-ndk \
+    vendor.samsung.libcolor.custom \
     HotwordEnrollmentOKGoogleEx4CORTEXM4 \
     HotwordEnrollmentXGoogleEx4CORTEXM4 \
     com.android.hotwordenrollment.common.util \
     android.hardware.security.keymint-service.samsung \
     tzdaemon \
     tzts_daemon
+
+PRODUCT_PACKAGES += \
+    vendor_lib64_libOpenCL_so \
+    vendor_lib64_libOpenCL_so_1 \
+    vendor_lib64_libOpenCL_so_1_1
