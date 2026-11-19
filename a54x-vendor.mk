@@ -6,24 +6,63 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/a54x
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/a54x/proprietary/product/etc/permissions/privapp-permissions-google-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-product.xml \
+    vendor/samsung/a54x/proprietary/product/etc/sysconfig/asi_features.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/asi_features.xml \
+    vendor/samsung/a54x/proprietary/product/etc/sysconfig/sysconfig_contextual_search.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/sysconfig_contextual_search.xml \
+    vendor/samsung/a54x/proprietary/product/etc/sysconfig/sysconfig_gemini.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/sysconfig_gemini.xml \
     vendor/samsung/a54x/proprietary/recovery/root/vendor/firmware/s3907_a54x.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/s3907_a54x.bin \
+    vendor/samsung/a54x/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/samsung/a54x/proprietary/vendor/etc/SM-A546E/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/SM-A546E/floating_feature.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
+    vendor/samsung/a54x/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/samsung/a54x/proprietary/vendor/etc/init/android.hardware.security.keymint-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.samsung.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
+    vendor/samsung/a54x/proprietary/vendor/etc/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/sound_trigger_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_info.xml \
+    vendor/samsung/a54x/proprietary/vendor/firmware/APBargeIn_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBargeIn_AUDIO_SLSI.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/APDV_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APDV_AUDIO_SLSI.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/AP_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/AP_AUDIO_SLSI.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/SM-A546B/AIE.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-A546B/AIE.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/SM-A546B/calliope_sram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-A546B/calliope_sram.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/SM-A546B/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-A546B/mfc_fw.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/SM-A546B/os.checked.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-A546B/os.checked.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/SM-A546B/pablo_icpufw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-A546B/pablo_icpufw.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/SM-A546B/vts.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-A546B/vts.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/SM-A546E/AIE.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-A546E/AIE.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/SM-A546E/calliope_sram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-A546E/calliope_sram.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/SM-A546E/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-A546E/mfc_fw.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/SM-A546E/os.checked.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-A546E/os.checked.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/SM-A546E/pablo_icpufw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-A546E/pablo_icpufw.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/SM-A546E/vts.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-A546E/vts.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/SetMultiCalInfo.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SetMultiCalInfo.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/SoundAlive.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SoundAlive.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/SoundBoosterParam.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SoundBoosterParam.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/a2dpcom.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a2dpcom.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/abox_solution.conf:$(TARGET_COPY_OUT_VENDOR)/firmware/abox_solution.conf \
+    vendor/samsung/a54x/proprietary/vendor/firmware/abox_system.conf:$(TARGET_COPY_OUT_VENDOR)/firmware/abox_system.conf \
+    vendor/samsung/a54x/proprietary/vendor/firmware/abox_tplg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/abox_tplg.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/abox_tplg.conf:$(TARGET_COPY_OUT_VENDOR)/firmware/abox_tplg.conf \
+    vendor/samsung/a54x/proprietary/vendor/firmware/avsyncmix.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/avsyncmix.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/calliope_dram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/calliope_dram.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/camera_tilt_calibration_info_1_2:$(TARGET_COPY_OUT_VENDOR)/firmware/camera_tilt_calibration_info_1_2 \
+    vendor/samsung/a54x/proprietary/vendor/firmware/compress_capture.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/compress_capture.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/dax_param.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dax_param.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/default_configuration.flm.cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/default_configuration.flm.cfg.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/dolby.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dolby.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/is_mcu_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/is_mcu_fw.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/lc3dec.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/lc3dec.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/lc3enc.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/lc3enc.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/listenbackeffect.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/listenbackeffect.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/nfc/libsn220u_fw.so:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/libsn220u_fw.so \
+    vendor/samsung/a54x/proprietary/vendor/firmware/rxse.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/rxse.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/s3907_a54x.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s3907_a54x.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/sb_ll.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sb_ll.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/sb_music.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sb_music.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/sb_others.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sb_others.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/sectiongraph_tplg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sectiongraph_tplg.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/sectiongraph_tplg.conf:$(TARGET_COPY_OUT_VENDOR)/firmware/sectiongraph_tplg.conf \
+    vendor/samsung/a54x/proprietary/vendor/firmware/secure_configuration.flm.cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/secure_configuration.flm.cfg.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/setfile_3l6.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_3l6.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/setfile_4ha.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_4ha.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/setfile_gc02m1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_gc02m1.bin \
@@ -32,6 +71,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a54x/proprietary/vendor/firmware/setfile_hm6.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_hm6.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/setfile_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_imx616.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/setfile_imx766.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_imx766.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/tfa9878.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa9878.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
+    vendor/samsung/a54x/proprietary/vendor/firmware/txse1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse1.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/txse2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse2.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/volumemonitor.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/volumemonitor.bin \
     vendor/samsung/a54x/proprietary/vendor/tee/SM-A546B/00000000-0000-0000-0000-000000010081:$(TARGET_COPY_OUT_VENDOR)/tee/SM-A546B/00000000-0000-0000-0000-000000010081 \
     vendor/samsung/a54x/proprietary/vendor/tee/SM-A546B/00000000-0000-0000-0000-000000020081:$(TARGET_COPY_OUT_VENDOR)/tee/SM-A546B/00000000-0000-0000-0000-000000020081 \
     vendor/samsung/a54x/proprietary/vendor/tee/SM-A546B/00000000-0000-0000-0000-000000534b4d:$(TARGET_COPY_OUT_VENDOR)/tee/SM-A546B/00000000-0000-0000-0000-000000534b4d \
@@ -108,15 +152,45 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     gatekeeper.s5e8835 \
+    sound_trigger.primary.s5e8835 \
+    libSamsungPostProcessConvertor \
+    lib_SamsungRec_07010 \
+    lib_SoundAlive_3DPosition_ver202 \
+    lib_SoundAlive_AlbumArt_ver105 \
+    lib_SoundAlive_SRC384_ver320 \
+    lib_SoundAlive_play_plus_ver500 \
+    lib_SoundBooster_ver1100 \
+    lib_soundaliveresampler \
+    libaboxpcmdump \
+    libalsautils_sec \
+    libaudioparamupdate \
+    libaudioroute_samsung \
+    libdatamod \
+    liblastaboxmsg \
+    libprofileparamstorage \
+    librecordalive \
     libsec_semHalTlc \
     libsec_semRil \
+    libsecaudiocoreutils \
+    libsecaudioinfo \
+    libsecaudiolevel \
     libsecnativefeature \
     libskeymint10device \
     libskeymint_cli \
+    libspatializerparamstorage \
+    libspeakercalibration \
     libspictrl \
     libteecl \
     libuuid_vendor \
+    libaudioeffectoffload \
+    libaudiosaplus_sec \
+    libmyspace \
+    libswdap \
+    libswspatializer \
     vendor.samsung.hardware.keymint-V2-ndk \
+    HotwordEnrollmentOKGoogleEx4CORTEXM4 \
+    HotwordEnrollmentXGoogleEx4CORTEXM4 \
+    com.android.hotwordenrollment.common.util \
     android.hardware.security.keymint-service.samsung \
     tzdaemon \
     tzts_daemon
