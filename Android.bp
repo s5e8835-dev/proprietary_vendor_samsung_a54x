@@ -799,6 +799,29 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcryptx",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcryptx.so",
+            ],
+            shared_libs: [
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcsc",
     owner: "samsung",
     strip: {
@@ -812,6 +835,33 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libexynosscaler",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcurx",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcurx.so",
+            ],
+            shared_libs: [
+                "libcryptx",
+                "libssx",
+                "libz",
                 "libc++",
                 "libc",
                 "libm",
@@ -2575,6 +2625,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libssx",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libssx.so",
+            ],
+            shared_libs: [
+                "libcryptx",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsynaFpSensorTestNwd",
     owner: "samsung",
     strip: {
@@ -3920,9 +3994,9 @@ cc_prebuilt_binary {
                 "liblog",
                 "libm",
                 "libandroid_net",
-                "libssl",
-                "libcrypto",
-                "libcurl",
+                "libssx",
+                "libcryptx",
+                "libcurx",
                 "libz",
                 "libdl",
                 "libc",

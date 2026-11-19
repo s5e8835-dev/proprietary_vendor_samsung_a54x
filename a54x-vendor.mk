@@ -349,7 +349,9 @@ PRODUCT_PACKAGES += \
     libalsautils_sec \
     libaudioparamupdate \
     libaudioroute_samsung \
+    libcryptx \
     libcsc \
+    libcurx \
     libdatamod \
     libdisplaycolor_default \
     libdualcam_refocus_video \
@@ -409,6 +411,7 @@ PRODUCT_PACKAGES += \
     libspatializerparamstorage \
     libspeakercalibration \
     libspictrl \
+    libssx \
     libsynaFpSensorTestNwd \
     libteecl \
     libuniapi \
