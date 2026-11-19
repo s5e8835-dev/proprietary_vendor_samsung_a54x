@@ -56,6 +56,105 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a54x/proprietary/vendor/firmware/AP_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/AP_AUDIO_SLSI.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/OD_V2.4.3_05_11_QVGA_QUARTZ_ENN_RGB1P.nnc:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.4.3_05_11_QVGA_QUARTZ_ENN_RGB1P.nnc \
     vendor/samsung/a54x/proprietary/vendor/firmware/OD_V2.5.2_05_11_VGA_QUARTZ_ENN_RGB1P.nnc:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.5.2_05_11_VGA_QUARTZ_ENN_RGB1P.nnc \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP100_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP100_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP101_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP101_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP102_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP102_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP103_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP103_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP104_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP104_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP105_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP105_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP106_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP106_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP107_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP107_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP108_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP108_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP109_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP109_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP10_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP10_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP110_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP110_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP111_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP111_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP11_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP11_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP12_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP12_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP13_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP13_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP14_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP14_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP15_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP15_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP16_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP16_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP17_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP17_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP19_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP19_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP1_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP1_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP24_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP24_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP25_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP25_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP27_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP27_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP28_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP28_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP29_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP29_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP2_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP2_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP30_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP30_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP31_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP31_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP32_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP32_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP33_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP33_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP34_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP34_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP35_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP35_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP36_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP36_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP37_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP37_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP38_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP38_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP39_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP39_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP3_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP3_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP40_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP40_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP41_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP41_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP42_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP42_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP47_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP47_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP48_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP48_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP4_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP50_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP50_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP51_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP51_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP52_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP52_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP53_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP53_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP54_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP54_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP55_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP55_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP56_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP56_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP57_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP57_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP58_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP58_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP59_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP59_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP5_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP5_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP60_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP60_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP61_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP61_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP62_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP62_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP63_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP63_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP64_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP64_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP65_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP65_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP66_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP66_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP67_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP67_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP68_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP68_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP69_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP69_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP6_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP6_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP70_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP70_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP71_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP71_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP72_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP72_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP73_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP73_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP74_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP74_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP75_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP75_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP76_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP76_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP77_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP77_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP78_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP78_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP79_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP79_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP7_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP7_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP80_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP80_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP82_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP82_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP83_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP83_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP84_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP84_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP85_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP85_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP86_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP86_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP87_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP87_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP88_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP88_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP89_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP89_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP8_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP8_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP90_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP90_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP91_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP91_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP92_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP92_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP93_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP93_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP94_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP94_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP95_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP95_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP96_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP96_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP97_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP97_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP98_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP98_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP99_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP99_RTP.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/RTP9_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP9_RTP.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/SM-A546B/AIE.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-A546B/AIE.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/SM-A546B/calliope_sram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-A546B/calliope_sram.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/SM-A546B/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SM-A546B/mfc_fw.bin \
@@ -77,6 +176,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a54x/proprietary/vendor/firmware/abox_tplg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/abox_tplg.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/abox_tplg.conf:$(TARGET_COPY_OUT_VENDOR)/firmware/abox_tplg.conf \
     vendor/samsung/a54x/proprietary/vendor/firmware/avsyncmix.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/avsyncmix.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/aw8622x_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8622x_haptic.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/calliope_dram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/calliope_dram.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/camera_tilt_calibration_info_1_2:$(TARGET_COPY_OUT_VENDOR)/firmware/camera_tilt_calibration_info_1_2 \
     vendor/samsung/a54x/proprietary/vendor/firmware/compress_capture.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/compress_capture.bin \
