@@ -45,6 +45,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a54x/proprietary/vendor/etc/init/android.hardware.security.keymint-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.samsung.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/camera.unihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camera.unihal.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/epic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/epic.rc \
+    vendor/samsung/a54x/proprietary/vendor/etc/init/init.sensorhub.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sensorhub.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung_slsi.hardware.epic@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung_slsi.hardware.epic@1.0-service.rc \
@@ -261,6 +262,9 @@ PRODUCT_PACKAGES += \
     libuuid_vendor \
     libvpl \
     libwvaidl \
+    sensors.grip \
+    sensors.inputvirtual \
+    sensors.sensorhub \
     libaudioeffectoffload \
     libaudiosaplus_sec \
     libmyspace \
