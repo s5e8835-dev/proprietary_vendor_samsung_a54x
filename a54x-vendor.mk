@@ -40,6 +40,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a54x/proprietary/vendor/etc/dqe/hlgLut_Default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/hlgLut_Default.xml \
     vendor/samsung/a54x/proprietary/vendor/etc/dqe/hlgLut_Inner_SRGB.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/hlgLut_Inner_SRGB.xml \
     vendor/samsung/a54x/proprietary/vendor/etc/dqe/wcgLut.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/wcgLut.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/android.hardware.security.keymint-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.samsung.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
@@ -199,6 +200,7 @@ PRODUCT_PACKAGES += \
     libhdr10p_meta_plugin_default \
     libhdr_plugin \
     liblastaboxmsg \
+    liboemcrypto \
     libprofileparamstorage \
     librecordalive \
     libsec_semHalTlc \
@@ -214,6 +216,7 @@ PRODUCT_PACKAGES += \
     libspictrl \
     libteecl \
     libuuid_vendor \
+    libwvaidl \
     libaudioeffectoffload \
     libaudiosaplus_sec \
     libmyspace \
@@ -224,6 +227,8 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleEx4CORTEXM4 \
     HotwordEnrollmentXGoogleEx4CORTEXM4 \
     com.android.hotwordenrollment.common.util \
+    manifest_android.hardware.drm-service.widevine.xml \
+    android.hardware.drm-service.widevine \
     android.hardware.security.keymint-service.samsung \
     tzdaemon \
     tzts_daemon
