@@ -42,16 +42,24 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a54x/proprietary/vendor/etc/dqe/hlgLut_Inner_SRGB.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/hlgLut_Inner_SRGB.xml \
     vendor/samsung/a54x/proprietary/vendor/etc/dqe/wcgLut.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/wcgLut.xml \
     vendor/samsung/a54x/proprietary/vendor/etc/epic.json:$(TARGET_COPY_OUT_VENDOR)/etc/epic.json \
+    vendor/samsung/a54x/proprietary/vendor/etc/gnss/ca.pem:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/ca.pem \
+    vendor/samsung/a54x/proprietary/vendor/etc/gnss/deleteLogCommands:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/deleteLogCommands \
+    vendor/samsung/a54x/proprietary/vendor/etc/gnss/gps.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cfg \
+    vendor/samsung/a54x/proprietary/vendor/etc/gnss/gps.debug.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.debug.cfg \
+    vendor/samsung/a54x/proprietary/vendor/etc/gnss/gps.issuetracker.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.issuetracker.cfg \
+    vendor/samsung/a54x/proprietary/vendor/etc/gnss/hardware_factors.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/hardware_factors.conf \
     vendor/samsung/a54x/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/android.hardware.security.keymint-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.samsung.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/camera.unihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camera.unihal.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/epic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/epic.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/init.fingerprint.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fingerprint.rc \
+    vendor/samsung/a54x/proprietary/vendor/etc/init/init.gps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/init.sensorhub.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sensorhub.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc \
+    vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss-service.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung.rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rild.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung_slsi.hardware.epic@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung_slsi.hardware.epic@1.0-service.rc \
@@ -295,6 +303,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libGLES_mali \
+    gnss_aidl_lib \
     camera.s5e8835 \
     camera.unihal.default \
     gatekeeper.s5e8835 \
@@ -386,6 +395,7 @@ PRODUCT_PACKAGES += \
     libuuid_vendor \
     libvkmanager_vendor \
     libvpl \
+    libwrappergps \
     libwvaidl \
     sensors.grip \
     sensors.inputvirtual \
@@ -405,6 +415,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.biometrics.fingerprint-V1-ndk \
     vendor.samsung.hardware.camera.device-V1-ndk \
     vendor.samsung.hardware.camera.provider-V1-ndk \
+    vendor.samsung.hardware.gnss-V3-ndk \
     vendor.samsung.hardware.keymint-V2-ndk \
     vendor.samsung.hardware.radio-V1-ndk \
     vendor.samsung.hardware.radio.bridge-V1-ndk \
@@ -426,8 +437,12 @@ PRODUCT_PACKAGES += \
     epic \
     android.hardware.drm-service.widevine \
     android.hardware.security.keymint-service.samsung \
+    gps \
+    gpsd \
+    macloader \
     rild \
     vendor.samsung.hardware.camera.provider-service_64 \
+    vendor.samsung.hardware.gnss-service \
     vendor.samsung_slsi.hardware.epic@1.0-service \
     tzdaemon \
     tzts_daemon
