@@ -45,6 +45,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a54x/proprietary/vendor/etc/init/android.hardware.security.keymint-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.samsung.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/camera.unihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camera.unihal.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/epic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/epic.rc \
+    vendor/samsung/a54x/proprietary/vendor/etc/init/init.fingerprint.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fingerprint.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/init.sensorhub.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sensorhub.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc \
@@ -311,6 +312,7 @@ PRODUCT_PACKAGES += \
     libdatamod \
     libdisplaycolor_default \
     libdualcam_refocus_video \
+    libegis_fp_normal_sensor_test \
     libeis_core \
     libenn_common_utils \
     libenn_cpu_operators \
@@ -325,6 +327,7 @@ PRODUCT_PACKAGES += \
     libepicoperator \
     libexynosscaler \
     libformatConverter.unifunc \
+    libgf_in_system_lib \
     libgiantmscl \
     libhdr10p_meta_plugin_default \
     libhdr_plugin \
@@ -336,6 +339,7 @@ PRODUCT_PACKAGES += \
     libmpbase \
     liboemcrypto \
     libprofileparamstorage \
+    libqfp_sensortest \
     librecordalive \
     libsamsungcamerahal \
     libsamsungcamerahalutils \
@@ -351,11 +355,14 @@ PRODUCT_PACKAGES += \
     libsecnativefeature \
     libsemseg \
     libsensorlistener \
+    libsfp_sensor \
+    libsfp_teegw \
     libskeymint10device \
     libskeymint_cli \
     libspatializerparamstorage \
     libspeakercalibration \
     libspictrl \
+    libsynaFpSensorTestNwd \
     libteecl \
     libuniapi \
     libuniplugin \
@@ -377,6 +384,7 @@ PRODUCT_PACKAGES += \
     unihal_main \
     unihal_scenario \
     unihal_uniplugin@1.0 \
+    vendor.samsung.hardware.biometrics.fingerprint-V1-ndk \
     vendor.samsung.hardware.camera.device-V1-ndk \
     vendor.samsung.hardware.camera.provider-V1-ndk \
     vendor.samsung.hardware.keymint-V2-ndk \
