@@ -40,11 +40,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a54x/proprietary/vendor/etc/dqe/hlgLut_Default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/hlgLut_Default.xml \
     vendor/samsung/a54x/proprietary/vendor/etc/dqe/hlgLut_Inner_SRGB.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/hlgLut_Inner_SRGB.xml \
     vendor/samsung/a54x/proprietary/vendor/etc/dqe/wcgLut.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/wcgLut.xml \
+    vendor/samsung/a54x/proprietary/vendor/etc/epic.json:$(TARGET_COPY_OUT_VENDOR)/etc/epic.json \
     vendor/samsung/a54x/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/android.hardware.security.keymint-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.samsung.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/camera.unihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camera.unihal.rc \
+    vendor/samsung/a54x/proprietary/vendor/etc/init/epic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/epic.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc \
+    vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung_slsi.hardware.epic@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung_slsi.hardware.epic@1.0-service.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
     vendor/samsung/a54x/proprietary/vendor/etc/sound_trigger_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_info.xml \
     vendor/samsung/a54x/proprietary/vendor/firmware/APBargeIn_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBargeIn_AUDIO_SLSI.bin \
@@ -185,6 +188,7 @@ PRODUCT_PACKAGES += \
     camera.unihal.default \
     gatekeeper.s5e8835 \
     sound_trigger.primary.s5e8835 \
+    vendor.samsung_slsi.hardware.epic@1.0-impl \
     vulkan.mali \
     libExtIRTA \
     libExynosHWCService \
@@ -216,6 +220,8 @@ PRODUCT_PACKAGES += \
     libenn_user_driver_gpu_lib \
     libenn_user_driver_unified \
     libenn_user_lib \
+    libepic_helper \
+    libepicoperator \
     libexynosscaler \
     libformatConverter.unifunc \
     libgiantmscl \
@@ -272,14 +278,17 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.keymint-V2-ndk \
     vendor.samsung.hardware.thermal@1.0 \
     vendor.samsung.libcolor.custom \
+    vendor.samsung_slsi.hardware.epic@1.0 \
     HotwordEnrollmentOKGoogleEx4CORTEXM4 \
     HotwordEnrollmentXGoogleEx4CORTEXM4 \
     com.android.hotwordenrollment.common.util \
     manifest_android.hardware.drm-service.widevine.xml \
     vendor.samsung.hardware.camera.provider-service.xml \
+    epic \
     android.hardware.drm-service.widevine \
     android.hardware.security.keymint-service.samsung \
     vendor.samsung.hardware.camera.provider-service_64 \
+    vendor.samsung_slsi.hardware.epic@1.0-service \
     tzdaemon \
     tzts_daemon
 
