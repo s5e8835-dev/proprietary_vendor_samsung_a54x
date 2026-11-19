@@ -42,7 +42,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a54x/proprietary/vendor/etc/dqe/wcgLut.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/wcgLut.xml \
     vendor/samsung/a54x/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/android.hardware.security.keymint-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.samsung.rc \
+    vendor/samsung/a54x/proprietary/vendor/etc/init/camera.unihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camera.unihal.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
+    vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
     vendor/samsung/a54x/proprietary/vendor/etc/sound_trigger_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_info.xml \
     vendor/samsung/a54x/proprietary/vendor/firmware/APBargeIn_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBargeIn_AUDIO_SLSI.bin \
@@ -179,10 +181,14 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libGLES_mali \
+    camera.s5e8835 \
+    camera.unihal.default \
     gatekeeper.s5e8835 \
     sound_trigger.primary.s5e8835 \
     vulkan.mali \
+    libExtIRTA \
     libExynosHWCService \
+    libIRTA \
     libSamsungPostProcessConvertor \
     lib_SamsungRec_07010 \
     lib_SoundAlive_3DPosition_ver202 \
@@ -190,46 +196,90 @@ PRODUCT_PACKAGES += \
     lib_SoundAlive_SRC384_ver320 \
     lib_SoundAlive_play_plus_ver500 \
     lib_SoundBooster_ver1100 \
+    lib_profiler \
     lib_soundaliveresampler \
     libaboxpcmdump \
     libalsautils_sec \
     libaudioparamupdate \
     libaudioroute_samsung \
+    libcsc \
     libdatamod \
     libdisplaycolor_default \
+    libdualcam_refocus_video \
+    libeis_core \
+    libenn_common_utils \
+    libenn_cpu_operators \
+    libenn_engine_lib \
+    libenn_model \
+    libenn_public_api_cpp_lib \
+    libenn_user_driver_cpu \
+    libenn_user_driver_gpu_lib \
+    libenn_user_driver_unified \
+    libenn_user_lib \
+    libexynosscaler \
+    libformatConverter.unifunc \
+    libgiantmscl \
     libhdr10p_meta_plugin_default \
     libhdr_plugin \
+    libhwjpeg \
+    libhwjsqz \
+    libimgproc_sw.unifunc@common \
+    libjpegencoder_sw.unifunc \
     liblastaboxmsg \
+    libmpbase \
     liboemcrypto \
     libprofileparamstorage \
     librecordalive \
+    libsamsungcamerahal \
+    libsamsungcamerahalutils \
+    libsamsungcamerahwl_impl \
+    libscaler_hw.unifunc \
+    libscaler_sw.unifunc \
+    libsec2lsi_conversion \
     libsec_semHalTlc \
     libsec_semRil \
     libsecaudiocoreutils \
     libsecaudioinfo \
     libsecaudiolevel \
     libsecnativefeature \
+    libsemseg \
+    libsensorlistener \
     libskeymint10device \
     libskeymint_cli \
     libspatializerparamstorage \
     libspeakercalibration \
     libspictrl \
     libteecl \
+    libuniapi \
+    libuniplugin \
     libuuid_vendor \
+    libvpl \
     libwvaidl \
     libaudioeffectoffload \
     libaudiosaplus_sec \
     libmyspace \
     libswdap \
     libswspatializer \
+    unihal_android \
+    unihal_cutils \
+    unihal_entry \
+    unihal_filter_unit \
+    unihal_main \
+    unihal_scenario \
+    unihal_uniplugin@1.0 \
+    vendor.samsung.hardware.camera.device-V1-ndk \
+    vendor.samsung.hardware.camera.provider-V1-ndk \
     vendor.samsung.hardware.keymint-V2-ndk \
+    vendor.samsung.hardware.thermal@1.0 \
     vendor.samsung.libcolor.custom \
     HotwordEnrollmentOKGoogleEx4CORTEXM4 \
     HotwordEnrollmentXGoogleEx4CORTEXM4 \
     com.android.hotwordenrollment.common.util \
     manifest_android.hardware.drm-service.widevine.xml \
+    vendor.samsung.hardware.camera.provider-service.xml \
     android.hardware.drm-service.widevine \
     android.hardware.security.keymint-service.samsung \
+    vendor.samsung.hardware.camera.provider-service_64 \
     tzdaemon \
     tzts_daemon
 
