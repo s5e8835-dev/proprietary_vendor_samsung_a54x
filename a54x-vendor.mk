@@ -49,6 +49,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a54x/proprietary/vendor/etc/gnss/gps.debug.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.debug.cfg \
     vendor/samsung/a54x/proprietary/vendor/etc/gnss/gps.issuetracker.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.issuetracker.cfg \
     vendor/samsung/a54x/proprietary/vendor/etc/gnss/hardware_factors.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/hardware_factors.conf \
+    vendor/samsung/a54x/proprietary/vendor/etc/init.insmod.s5e8835.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.s5e8835.cfg \
     vendor/samsung/a54x/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/android.hardware.security.keymint-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.samsung.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/camera.unihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camera.unihal.rc \
@@ -66,6 +67,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung.rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rild.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/init/vendor.samsung_slsi.hardware.epic@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung_slsi.hardware.epic@1.0-service.rc \
+    vendor/samsung/a54x/proprietary/vendor/etc/init/wifi_slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_slsi.rc \
     vendor/samsung/a54x/proprietary/vendor/etc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
     vendor/samsung/a54x/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/samsung/a54x/proprietary/vendor/etc/nfc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp_RF.conf \
@@ -233,6 +235,18 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a54x/proprietary/vendor/firmware/txse1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse1.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/txse2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse2.bin \
     vendor/samsung/a54x/proprietary/vendor/firmware/volumemonitor.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/volumemonitor.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/wifi/hydra_config.sdb:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/hydra_config.sdb \
+    vendor/samsung/a54x/proprietary/vendor/firmware/wifi/mx140.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140.bin \
+    vendor/samsung/a54x/proprietary/vendor/firmware/wifi/mx140/build_id.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/build_id.txt \
+    vendor/samsung/a54x/proprietary/vendor/firmware/wifi/mx140/wpal:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/wpal \
+    vendor/samsung/a54x/proprietary/vendor/firmware/wifi/mx140_bt.hcf:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140_bt.hcf \
+    vendor/samsung/a54x/proprietary/vendor/firmware/wifi/mx140_common.hcf:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140_common.hcf \
+    vendor/samsung/a54x/proprietary/vendor/firmware/wifi/mx140_wlan.hcf:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140_wlan.hcf \
+    vendor/samsung/a54x/proprietary/vendor/firmware/wifi/mx140_wlan_sw.hcf:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140_wlan_sw.hcf \
+    vendor/samsung/a54x/proprietary/vendor/firmware/wifi/mx140_wlan_t.hcf:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140_wlan_t.hcf \
+    vendor/samsung/a54x/proprietary/vendor/firmware/wifi/mx140_wlan_t_sw.hcf:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140_wlan_t_sw.hcf \
+    vendor/samsung/a54x/proprietary/vendor/firmware/wifi/platform.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/platform.txt \
+    vendor/samsung/a54x/proprietary/vendor/firmware/wifi/slsi_reg_database.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/slsi_reg_database.bin \
     vendor/samsung/a54x/proprietary/vendor/tee/SM-A546B/00000000-0000-0000-0000-000000010081:$(TARGET_COPY_OUT_VENDOR)/tee/SM-A546B/00000000-0000-0000-0000-000000010081 \
     vendor/samsung/a54x/proprietary/vendor/tee/SM-A546B/00000000-0000-0000-0000-000000020081:$(TARGET_COPY_OUT_VENDOR)/tee/SM-A546B/00000000-0000-0000-0000-000000020081 \
     vendor/samsung/a54x/proprietary/vendor/tee/SM-A546B/00000000-0000-0000-0000-000000534b4d:$(TARGET_COPY_OUT_VENDOR)/tee/SM-A546B/00000000-0000-0000-0000-000000534b4d \
@@ -455,6 +469,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.camera.provider-service_64 \
     vendor.samsung.hardware.gnss-service \
     vendor.samsung_slsi.hardware.epic@1.0-service \
+    init.insmod \
     tzdaemon \
     tzts_daemon
 

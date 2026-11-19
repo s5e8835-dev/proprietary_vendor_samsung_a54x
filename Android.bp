@@ -4144,6 +4144,14 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
+sh_binary {
+    name: "init.insmod",
+    owner: "samsung",
+    src: "proprietary/vendor/bin/init.insmod.sh",
+    filename: "init.insmod.sh",
+    soc_specific: true,
+}
+
 cc_prebuilt_binary {
     name: "tzdaemon",
     owner: "samsung",
