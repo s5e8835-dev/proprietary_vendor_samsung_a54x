@@ -11,3 +11,385 @@ soong_namespace {
         "hardware/samsung_slsi-linaro/interfaces",
     ],
 }
+
+cc_prebuilt_library_shared {
+    name: "gatekeeper.s5e8835",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/gatekeeper.s5e8835.so",
+            ],
+            shared_libs: [
+                "libteecl",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsec_semHalTlc",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsec_semHalTlc.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libteecl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsec_semRil",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsec_semRil.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libsecril-client",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsecnativefeature",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsecnativefeature.so",
+            ],
+            shared_libs: [
+                "libexpat",
+                "libcutils",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libskeymint10device",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libskeymint10device.so",
+            ],
+            shared_libs: [
+                "android.hardware.security.rkp-V2-ndk",
+                "libshim_crypto",
+                "libcrypto-v33",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libbase",
+                "libhidlbase",
+                "libbinder_ndk",
+                "libskeymint_cli",
+                "libsecril-client",
+                "vendor.samsung.hardware.keymint-V2-ndk",
+                "android.hardware.security.keymint-V2-ndk",
+                "android.hardware.security.sharedsecret-V1-ndk",
+                "android.hardware.security.secureclock-V1-ndk",
+                "libcppbor_external",
+                "libjsoncpp",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libskeymint_cli",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libskeymint_cli.so",
+            ],
+            shared_libs: [
+                "android.hardware.security.rkp-V2-ndk",
+                "libshim_crypto",
+                "liblog",
+                "libbase",
+                "libcutils",
+                "libutils",
+                "android.hardware.keymaster@4.0",
+                "android.hardware.keymaster@4.1",
+                "libkeymaster4support",
+                "libkeymaster4_1support",
+                "libhidlbase",
+                "libcrypto-v33",
+                "libbinder_ndk",
+                "libsecril-client",
+                "android.hardware.security.keymint-V2-ndk",
+                "android.hardware.security.sharedsecret-V1-ndk",
+                "android.hardware.security.secureclock-V1-ndk",
+                "libjsoncpp",
+                "libteecl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libspictrl",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libspictrl.so",
+            ],
+            shared_libs: [
+                "libsec_semRil",
+                "libc",
+                "libm",
+                "libdl",
+                "liblog",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libteecl",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libteecl.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libuuid_vendor",
+    stem: "libuuid",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libuuid.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.samsung.hardware.keymint-V2-ndk",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.samsung.hardware.keymint-V2-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.security.keymint-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.security.keymint-service.samsung",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.security.keymint-service.samsung",
+            ],
+            shared_libs: [
+                "android.hardware.security.rkp-V2-ndk",
+                "libshim_crypto",
+                "libskeymint10device",
+                "vendor.samsung.hardware.keymint-V2-ndk",
+                "android.hardware.security.keymint-V2-ndk",
+                "android.hardware.security.sharedsecret-V1-ndk",
+                "android.hardware.security.secureclock-V1-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "libcppbor_external",
+                "libcrypto-v33",
+                "libkeymaster_portable",
+                "liblog",
+                "libpuresoftkeymasterdevice",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "tzdaemon",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/tzdaemon",
+            ],
+            shared_libs: [
+                "libteecl",
+                "libuuid_vendor",
+                "liblog",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "tzts_daemon",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/tzts_daemon",
+            ],
+            shared_libs: [
+                "libteecl",
+                "libuuid_vendor",
+                "liblog",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
